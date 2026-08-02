@@ -1,0 +1,2 @@
+# Receipts are byte-exact hash-committed artifacts: NO line-ending conversion, ever.
+* -text

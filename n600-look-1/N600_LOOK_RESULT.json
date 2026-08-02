@@ -1,0 +1,14 @@
+{
+ "spec": "v13-runway-landmark",
+ "somers_d": -0.020758768790264837,
+ "c_index": 0.4896206156048676,
+ "p": 0.5874412558744125,
+ "n": 249,
+ "events": 237,
+ "censored": 12,
+ "n_comparable": 30734,
+ "verdict_class": "NULL",
+ "reject_null": false,
+ "ran_at": "2026-07-31T15:44:20+00:00",
+ "fingerprint": "197054c20180ef5f0d3efd15"
+}
