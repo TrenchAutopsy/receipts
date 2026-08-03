@@ -30,6 +30,17 @@ consumed a single-use lock — fingerprint `197054c20180ef5f0d3efd15`, recorded 
 both the report and the machine-readable result — so it cannot be quietly re-run until
 something comes out prettier.
 
+**Why "n600" but n=249?** The pre-registration set a trigger of 600 tokens reaching a
+sealed 72-hour verdict; that gate was met (604) and the look fired. The *analyzable*
+cohort is smaller — 249 — because the same frozen rules exclude any token whose
+outcome or exposure could not be established honestly: 186 with an indeterminate
+outcome, 281 with an ambiguous event time, 220 excluded by the SOL-reference validity
+band, 73 that died before the exposure window opened. Every exclusion rule was written
+down before the data was seen, and the full attrition table is the first block of
+`N600_LOOK_REPORT.md`. Trigger counts tokens that *finished*; the estimand counts
+tokens we can *honestly analyze* — and we would rather publish 249 defensible rows
+than 600 convenient ones.
+
 | File | SHA-256 | What it anchors |
 |---|---|---|
 | `n600-look-1/BUILD4_SIGNAL_PREREG_v13.md` | `f1b15799…e2ea` * | The frozen pre-registration (v13): every rule of the experiment, ratified and signed before the look fired. |
